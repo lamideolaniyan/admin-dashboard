@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Lato', sans-serif;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	font-size: 1.6rem;
+	background-color: #000;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+a:link,
+a:visited,
+a:active,
+a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 30rem auto;
+	grid-template-rows: 15rem auto;
+	height: 100vh;
+	padding: 0 20rem;
+	font-size: 8rem;
+	color: #fff;
+}
+
+.header {
+	background-color: orangered;
+	grid-column: 2/3;
+}
+
+.main {
+	background-color: violet;
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.sidebar {
+	background-color: blue;
+	grid-row: 1/3;
+}
