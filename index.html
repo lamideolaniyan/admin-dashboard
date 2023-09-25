@@ -14,7 +14,7 @@
 	</head>
 	<body class="container">
 		<header class="header">
-			<div class="header__grid-col-1">
+			<div class="header__grid-col-1 row-grid">
 				<form class="header__search--div">
 					<label for="search-input">
 						<!-- <ion-icon name="search-outline" class="icon search-icon"></ion-icon> -->
@@ -31,8 +31,21 @@
 				</form>
 				<div class="header__user"></div>
 			</div>
-			<div class="header__grid-col-2">
-				<div class="header__user--menu"></div>
+			<div class="header__grid-col-2 row-grid">
+				<div class="header__user--menu">
+					<svg class="icon icon-dark icon-bell">
+						<use xlink:href="./resources/icons/sprite.svg#icon-bell-ring"></use>
+					</svg>
+
+					<figure class="user__avatar--small">
+						<img
+							src="/resources/img/user-main.jpg"
+							alt="user avatar"
+							class="user__avatar--img"
+						/>
+					</figure>
+					<h3 class="user__avatar--caption">Morgan Oakley</h3>
+				</div>
 				<div class="header__user--nav"></div>
 			</div>
 		</header>
