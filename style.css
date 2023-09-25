@@ -10,7 +10,7 @@
 
 html {
 	font-size: 62.5%;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 body {
 	line-height: 1.5;
@@ -67,8 +67,12 @@ a:focus {
 }
 
 .header {
-	background-color: orangered;
+	background-color: #fff;
 	grid-column: 2/3;
+
+	display: grid;
+	grid-template-columns: 60% 1fr;
+	gap: 2rem;
 }
 
 .main {
@@ -80,4 +84,34 @@ a:focus {
 .sidebar {
 	background-color: blue;
 	grid-row: 1/3;
+}
+
+.header__grid-col-1 {
+	grid-column: 1/2;
+}
+
+.header__search--div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 4rem;
+}
+
+.search-input {
+	height: 4rem;
+	outline: 0;
+	border: 0;
+	background-color: rgba(209, 221, 223, 0.514);
+	border-radius: 5rem;
+	height: 3.5rem;
+	padding: 0.5rem 1rem;
+	transition: all 0.2s;
+	font-size: 1.6rem;
+	width: 100%;
+}
+.icon {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #000;
 }
