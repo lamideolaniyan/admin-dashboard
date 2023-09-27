@@ -14,7 +14,7 @@
 	</head>
 	<body class="container">
 		<header class="header">
-			<div class="header__grid-col-1 row-grid">
+			<div class="header__grid-row-1">
 				<form class="header__search--div">
 					<label for="search-input">
 						<!-- <ion-icon name="search-outline" class="icon search-icon"></ion-icon> -->
@@ -29,9 +29,7 @@
 						class="search-input"
 					/>
 				</form>
-				<div class="header__user"></div>
-			</div>
-			<div class="header__grid-col-2 row-grid">
+
 				<div class="header__user--menu">
 					<svg class="icon icon-dark icon-bell">
 						<use xlink:href="./resources/icons/sprite.svg#icon-bell-ring"></use>
@@ -46,7 +44,28 @@
 					</figure>
 					<h3 class="user__avatar--caption">Morgan Oakley</h3>
 				</div>
-				<div class="header__user--nav"></div>
+			</div>
+			<div class="header__grid-row-2">
+				<div class="header__user">
+					<figure class="user__avatar--big">
+						<img
+							src="/resources/img/user-main.jpg"
+							alt="user avatar"
+							class="user__avatar--img"
+						/>
+					</figure>
+
+					<div class="header__user--text-div">
+						<p class="header__user--text-small">Hi there,</p>
+						<h3 class="header__user--text-big">Morgan Oakley (@morgan)</h3>
+					</div>
+				</div>
+
+				<div class="header__user--nav">
+					<a href="#" class="btn btn-new">New</a>
+					<a href="#" class="btn btn-upload">Upload</a>
+					<a href="#" class="btn btn-share">Share</a>
+				</div>
 			</div>
 		</header>
 		<main class="main">main</main>
