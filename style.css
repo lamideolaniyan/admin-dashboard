@@ -11,6 +11,8 @@
 	--col-grey-light-1: #e2e8f0;
 	--col-grey-dark-1: #94a3b8;
 	--col-grey-dark-2: #6b7280;
+	--col-white: #fff;
+	--col-black: #000;
 
 	--shadow-light: 0rem 0.2rem 1rem var(--col-grey-dark-1);
 }
@@ -28,7 +30,7 @@ body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	font-size: 1.6rem;
-	background-color: #000;
+	background-color: var(--col-black);
 }
 
 /*
@@ -68,13 +70,18 @@ a:focus {
 	color: inherit;
 }
 
+ul,
+ol {
+	list-style-type: none;
+}
+
 .icon {
 	width: 2.4rem;
 	height: 2.4rem;
 }
 
 .icon-light {
-	fill: #fff;
+	fill: var(--col-white);
 }
 .icon-dark {
 	fill: var(--col-black-1);
@@ -86,12 +93,12 @@ a:focus {
 	grid-template-rows: 18rem auto;
 	height: 100vh;
 	padding: 0 20rem;
-	color: #fff;
+	color: var(--col-white);
 }
 
 .header {
 	grid-column: 2/3;
-	background-color: #fff;
+	background-color: var(--col-white);
 	color: var(--col-black-1);
 	padding: 0 6rem 1rem 4rem;
 
@@ -190,7 +197,7 @@ a:focus {
 	justify-content: space-between;
 }
 .header__user--nav {
-	color: #fff;
+	color: var(--col-white);
 
 	display: flex;
 	align-items: center;
@@ -228,12 +235,12 @@ a:focus {
 }
 
 .sidebar__header--icon {
-	height: 7.2rem;
-	width: 7.2rem;
+	height: 6.4rem;
+	width: 6.4rem;
 }
 
-.sidebar__nav--list {
-	list-style-type: none;
+.sidebar__nav--list,
+.footer__nav--list {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -241,13 +248,15 @@ a:focus {
 
 	gap: 2rem;
 }
-.sidebar__nav--item {
+.sidebar__nav--item,
+.footer__nav--item {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
 }
 
-.sidebar__nav--link {
+.sidebar__nav--link,
+.footer__nav--link {
 	font-size: 1.8rem;
 	font-weight: 700;
 }
@@ -256,4 +265,27 @@ a:focus {
 	background-color: var(--col-grey-light-1);
 	grid-column: 2/3;
 	grid-row: 2/3;
+
+	display: grid;
+	grid-template-columns: 70% auto;
+	gap: 2rem;
+	padding: 2rem 4rem 1rem 2rem;
+}
+
+.project {
+	grid-column: 1/2;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 1.5rem;
+
+	padding-bottom: 3rem;
+}
+
+.project__card {
+	height: 21rem;
+	background-color: var(--col-white);
+}
+
+.announcement {
+	background-color: fuchsia;
 }
