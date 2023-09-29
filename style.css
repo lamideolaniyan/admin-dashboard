@@ -12,9 +12,9 @@
 	--col-grey-dark-1: #94a3b8;
 	--col-grey-dark-2: #6b7280;
 	--col-grey-light-2: #cbd5e1;
-
 	--col-white: #fff;
 	--col-black: #000;
+	--col-orange: #fb923c;
 
 	--shadow-light: 0rem 0.2rem 1rem var(--col-grey-dark-1);
 	--shadow-light-1: 0rem 0.2rem 0.5rem var(--col-grey-light-2);
@@ -296,7 +296,7 @@ ol {
 	border-radius: 0.5rem;
 	box-shadow: var(--shadow-light-1);
 
-	border-left: 0.7rem solid orange;
+	border-left: 0.7rem solid var(--col-orange);
 }
 
 .project__card--header {
@@ -310,5 +310,32 @@ ol {
 }
 
 .announcement {
-	background-color: fuchsia;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	height: 100%;
+}
+
+.announcement__section {
+	background-color: var(--col-white);
+	border-radius: 0.5rem;
+	padding: 1.5rem 2rem 0 2rem;
+	box-shadow: var(--shadow-light-1);
+}
+
+.announcement__card {
+	padding: 1rem 0;
+	border-bottom: solid 1px var(--col-grey-light-2);
+}
+
+.announcement__card:last-of-type {
+	border-bottom: 0;
+}
+
+.announcement__card--header {
+	font-size: 1.6rem;
+}
+
+.announcement__card--text {
+	font-size: 1.2rem;
+	color: var(--col-grey-dark-2);
 }
