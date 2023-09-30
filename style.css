@@ -5,8 +5,8 @@
 }
 
 :root {
-	/* --col-primary-blue: #0ea5e9; */
 	--col-primary-blue: #0e9fe2;
+	--col-primary-blue-2: #075985;
 	--col-black-1: #020617;
 	--col-grey-light-1: #e2e8f0;
 	--col-grey-dark-1: #94a3b8;
@@ -88,6 +88,24 @@ ol {
 }
 .icon-dark {
 	fill: var(--col-black-1);
+}
+
+.btn {
+	padding: 1rem 4rem;
+	background-color: var(--col-primary-blue);
+	border-radius: 2rem;
+
+	font-size: 1.4rem;
+	font-weight: 700;
+	transition: all 0.2s;
+}
+
+.btn:hover {
+	background-color: var(--col-primary-blue-2);
+}
+
+.btn:active {
+	transform: translateY(0.2rem);
 }
 
 .container {
@@ -207,15 +225,6 @@ ol {
 	gap: 2rem;
 }
 
-.btn {
-	padding: 1rem 4rem;
-	background-color: var(--col-primary-blue);
-	border-radius: 2rem;
-
-	font-size: 1.4rem;
-	font-weight: 700;
-}
-
 .sidebar {
 	background-color: var(--col-primary-blue);
 	grid-row: 1/3;
@@ -262,6 +271,18 @@ ol {
 .footer__nav--link {
 	font-size: 1.8rem;
 	font-weight: 700;
+	border-bottom: solid 2px rgba(1, 1, 1, 0);
+	transition: all 0.2s;
+}
+
+.sidebar__nav--link:hover,
+.footer__nav--link:hover {
+	border-bottom: solid 2px var(--col-white);
+}
+
+.sidebar__nav--link:active,
+.footer__nav--link:active {
+	transform: translateY(0.2rem);
 }
 
 .main {
@@ -298,6 +319,19 @@ ol {
 	box-shadow: var(--shadow-light-1);
 
 	border-left: 0.7rem solid var(--col-orange);
+	transition: all 0.2s;
+}
+
+.project__card:hover {
+	background-color: var(--col-orange);
+
+	.project__card--text {
+		color: var(--col-white);
+	}
+
+	.project__card--header {
+		color: var(--col-white);
+	}
 }
 
 .project__card--header {
